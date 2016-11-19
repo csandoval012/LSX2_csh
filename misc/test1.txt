@@ -1,0 +1,61 @@
+ksjakldklsanmcklsadsadsa
+ds
+ad
+sa
+d
+cv
+xr
+ew
+4we
+gfdg
+
+gfdgfdgfdgdfgdf
+
+#########################################################
+#########################################################
+#########################################################
+
+<VirtualHost *:80>
+
+	ServerAdmin webmaster@localhost
+	DocumentRoot /var/www/html
+
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+</VirtualHost>
+
+
+
+#########################################################
+#########################################################
+#########################################################
+
+eth0      Link encap:Ethernet  HWaddr 84:2b:2b:c2:f8:d0  
+          inet addr:10.124.18.43  Bcast:10.124.18.255  Mask:255.255.255.0
+          inet6 addr: fe80::862b:2bff:fec2:f8d0/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:117160 errors:0 dropped:497 overruns:0 frame:0
+          TX packets:54444 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:93324168 (93.3 MB)  TX bytes:7969255 (7.9 MB)
+          Interrupt:21 Memory:f7be0000-f7c00000 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:2099 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:2099 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1 
+          RX bytes:222673 (222.6 KB)  TX bytes:222673 (222.6 KB)
+
+virbr0    Link encap:Ethernet  HWaddr e2:15:8e:ef:cb:d5  
+          inet addr:192.168.122.1  Bcast:192.168.122.255  Mask:255.255.255.0
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
