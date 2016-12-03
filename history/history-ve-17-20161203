@@ -1,0 +1,296 @@
+    1  cd 
+    2  ls -a
+    3  cat .bash_history
+    4  #mv .bash_history
+    5  mkdir old_history
+    6  mv .bash_history old_history/
+    7  touch .bash_history
+    8  ls -l .bash_history
+    9  pwd
+   10  ls
+   11  mkdir LXS2_evb
+   12  cd LXS2_evb/
+   13  ll
+   14  git clone https://github.com/emvarg/LXS2_evb
+   15  ls
+   16  ll
+   17  rm -rf LXS2_evb/
+   18  cd ..
+   19  rm -rf LXS2_evb/
+   20  git clone https://github.com/emvarg/LXS2_evb
+   21  cd LXS2_evb/
+   22  ll
+   23  cd git
+   24  ls
+   25  ls src/
+   26  ls cd misc/
+   27  cd misc/
+   28  ls
+   29  cp salida-de-perrito ../../LSX2_csh/misc/
+   30  ls
+   31  tree
+   32  ifconfig
+   33  sh user1@10.124.18.28
+   34  ssh user1@10.124.18.28
+   35  exit
+   36  history
+   37  ### Inicio de seccion de entrecomillado
+   38  history
+   39  ####
+   40  history
+   41  ######
+   42  #######
+   43  ########
+   44  VAR1=trump
+   45  echo $VAR1 es una rata
+   46  echo '$VAR1 es una rata'
+   47  cd LSX2_csh/
+   48  ll
+   49  cd misc/
+   50  git status
+   51  mkdir tmp1
+   52  ls
+   53  mv `ls *.log` tmp1/ 
+   54  tree
+   55  mv tmp1/* .
+   56  ls *.log
+   57  mv `ls *.log` tmp1/ 
+   58  echo hola mundo
+   59  echo "hola
+   60  mundo"
+   61  cp /tmp/* .
+   62  ll
+   63  cp tmp1/* .
+   64  rm -rf tmp1/
+   65  echo 4\*\2\>10\ es\ falso
+   66  echo "4*2>10 es falso
+   67  echo "4*2>10 es falso"
+   68  echo "El precio total es de \$5"
+   69  echo 'El precio total es de $5'
+   70  echo 4*2>10 es falso
+   71  ls
+   72  rm vboxdrv-Module.symvers unity_support_test.0
+   73  cat 10 
+   74  rm *.txt
+   75  ls
+   76  rm casa config-err-qwfIOZ 
+   77  ls
+   78  rm eth*
+   79  ls
+   80  rm file-casa-perro 
+   81  rm salida-de-perrito 
+   82  ls
+   83  rm erorr.log 
+   84  rm out.log 
+   85  rm /tmp/*
+   86  rm -rf /tmp/*
+   87  ls
+   88  tree
+   89  cp algo /tmp
+   90  echo $?
+   91  ls && mkdir tmp2
+   92  ls
+   93  cp algo /tmp && mkdir tmp3
+   94  ls
+   95  cp algo /tmp 2> /tmp/error && mkdir tmp3
+   96  cat /tmp/error 
+   97  touch -C
+   98  pstree | less
+   99  sudo apt-get install apache2
+  100  pstree | less
+  101  /etc/init.d/apache2 status
+  102  ls /var/www/
+  103  ls /var/www/html/
+  104  cat /etc/apache2/sites-available/000-default.conf 
+  105  cd /var/log/apache2/
+  106  ls
+  107  less access.log 
+  108  watch -n 1 "tail access.log"
+  109  netstat -latunp
+  110  netstat -latunpa
+  111  netstat -latunp | grep LISTEN
+  112  ssh user1@10.124.18.28
+  113  toute -n
+  114  route -n
+  115  ssh user1@10.124.18.28
+  116  ps aux | head
+  117  w
+  118  cd 
+  119  cd LSX2_csh/
+  120  cd misc/
+  121  vim test1.txt
+  122  jobs
+  123  cd /etc/apache2/sites-available/
+  124  cat 000-default.conf 
+  125  cat 000-default.conf | grep -v #
+  126  cat 000-default.conf | grep -v "#"
+  127  jobs
+  128  fg
+  129  cd -
+  130  vi test1.txt 
+  131  jobs
+  132  fg
+  133  cd ..
+  134  cd 
+  135  pushd ~/LSX2_csh/misc
+  136  dirs
+  137  pushd /etc/apache2/sites-available/
+  138  dirs
+  139  dirs -v
+  140  cd /var/www/
+  141  dirs -v
+  142  yes hola
+  143  yes ps -ef | grep pmon
+  144  yes ps -ef | grep http
+  145  yes hola > /dev/null
+  146  yes hola > /dev/null &
+  147  jobs
+  148  ping 127.0.0.1 > /dev/null &
+  149  jobs
+  150  cd 
+  151  cd LSX2_csh/
+  152  ls
+  153  cd misc/
+  154  vim test1.txt 
+  155  jobs
+  156  fg 2
+  157  jobs
+  158  fg
+  159  jobs
+  160  bg 2
+  161  jobs
+  162  ps
+  163  ps -l
+  164  bc
+  165  ps -l
+  166  ps -ef 
+  167  ps -l
+  168  dbus
+  169  ifconfig
+  170  ps -x
+  171  ps -u www-data
+  172  ps -a
+  173  kill -9 `pgrep yes`
+  174  jobs
+  175  free -l
+  176  free -h
+  177  df -lh
+  178  df -h
+  179  uptime
+  180  availability
+  181  uptime -v
+  182  uptime -V
+  183  uptime -h
+  184  uptime -p
+  185  uptime
+  186  uptime -s
+  187  uptime -p
+  188  last
+  189  w
+  190  ssh sysadmin@10.124.18.28
+  191  cd 
+  192  vi .bashrc 
+  193  ..bashrc
+  194  . .bashrc
+  195  vi .bashrc 
+  196  . .bashrc
+  197  vi .bashrc 
+  198  . .bashrc
+  199  sudo apt-get install htop
+  200  htop
+  201  top
+  202  sudo apt-get install iotop
+  203  iotop
+  204  sudo iotop
+  205  iostat
+  206  sudo iostat
+  207  sudo iostats
+  208  sudo apt-get install iostat
+  209  sudo apt-get install iostats
+  210  iftop
+  211  sudo apt-get install iftop
+  212  iftop
+  213  sudo iftpop
+  214  sudo iftop
+  215  ls
+  216  cd LSX2_csh/
+  217  history | grep git
+  218  git status
+  219  exit
+  220  history > LSX2_csh/history/history-$HOSTNAME`date +%Y%m%d`
+  221  ll LSX2_csh/history/
+  222  cd LSX2_csh/
+  223  git status
+  224  git add *
+  225  git add
+  226  git add -all
+  227  git status
+  228  git commit -m "clase 3"
+  229  git push origin master
+  230  exit
+  231  virsh
+  232  ll /media/sysadmin/media-pool/
+  233  sudo su -
+  234  sudo virsh
+  235  sudo su -
+  236  exit
+  237  su -s
+  238  su -
+  239  sodu su -
+  240  sudo su -
+  241  cd .ssh/
+  242  ll
+  243  ssh-copy-id sysadmin@192.168.122.243
+  244  ssh 192.168.122.243
+  245  exit
+  246  ls
+  247  cd LXS2_evb/
+  248  ll
+  249  git clone https://github.com/emvarg/LXS2_evb.git
+  250  cd ..
+  251  ll
+  252  ls
+  253  cd LSX2_csh/
+  254  ll
+  255  mkdir lvm
+  256  cd lvm/
+  257  cp -r /home/sysadmin/LXS2_evb/LXS2_evb/lvm/ .
+  258  ll
+  259  rm -rf lvm/
+  260  cd ..
+  261  rm -rf lvm
+  262  cp -r /home/sysadmin/LXS2_evb/LXS2_evb/lvm/ .
+  263  ll
+  264  cd lvm/
+  265  ññ
+  266  ll
+  267  ip -4 addr
+  268  ifconfig
+  269  cd ..
+  270  history | grep git
+  271  git status
+  272  git add *
+  273  git status
+  274  history | grep git
+  275  git commit -m "repo profe sin mod"
+  276  git push origin master
+  277  ping 192.168..122.243
+  278  ping 192.168.122.243
+  279  ls
+  280  cd lvm/
+  281  ll
+  282  vi gui-lvm.wiki 
+  283  vim gui-lvm.wiki 
+  284  exit
+  285  cat /proc/cpuinfo
+  286  exit
+  287  cd LSX2_csh/
+  288  ll
+  289  history | grep his
+  290  history > LSX2_csh/history/history-$HOSTNAME`date +%Y%m%d`
+  291  ll history/
+  292  date
+  293  history > history/history-$HOSTNAME`date +%Y%m%d`
+  294  ll history/
+  295  history > history/history-$HOSTNAME`-date +%Y%m%d`
+  296  history > history/history-$HOSTNAME-`date +%Y%m%d`

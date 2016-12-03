@@ -2,6 +2,8 @@ __Simbología__
 
 <VM> : nombre de la máquina virtual
 <user> : nombre de su usuario administrador
+$ es el usuario
+# es ejecutado como root
 
 = Pasos para crear el pool "media-pool" =
 
@@ -31,6 +33,9 @@ $ sudo su -
 # dd if=/dev/zero of=./disk-01.img bs=1M count=256
 # exit
 
+if es input file 
+of output file
+bs es block size
 #########################################################################
 # Nota: si quisiera crear una imagen que aumente de tamaño a como se    #
 # va ocupando, se debe agregar la opción bs=1M seek=256 count=0 de esta #
@@ -48,10 +53,13 @@ se puede agregar el dispositivo. Hay tres opciones obligartorias:
 No se agrega vda debido a que se supone que ya existe un sistema instalado
 y por consiguiente el primer dispositivo físico ya es†á utilizado.
 
+## En ubuntu 16.04 se debe configurar apparmor para crear un pool nuevo.
+## Para seguir con el lab, vamos a copiar las imagenes disk-xx.img al
+## path por defecto para las imagenes que seria /var/lib/libvirtd/images
 
 $ virsh
-virsh # attach-disk <VM> /media/<user>/media-pool/disk-00.img vdb --cache none --live
-virsh # attach-disk <VM> /media/<user>/media-pool/disk-01.img vdc --cache none --live
+virsh # attach-disk <VM> /var/lib/libvirtd/images/disk-00.img vda --cache none --live
+virsh # attach-disk <VM> /var/lib/libvirtd/images/disk-01.img vdb --cache none --live
 
 Notar que los dispositivos ahora son vdb y vdc. Utilice ssh para iniciar una 
 sesión remota en su máquina virtual. Ahora ejecute el siguiente comando:
@@ -196,15 +204,4 @@ Se puede notar como el volumen lógico posee más espacio.
 [1] https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Virtualization_Administration_Guide/sect-Virtualization-Virtualized_block_devices-Adding_storage_devices_to_guests.html
 [2] https://www.howtoforge.com/linux_lvm_snapshots
 [3] http://www.slashroot.in/advanced-guide-lvm-logical-volume-management-linux-part-1
-
-
-
-
-
-
-
-
-
-
-
 
